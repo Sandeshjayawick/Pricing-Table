@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap" rel="stylesheet"> 
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #7FA1C3;
+        
+      }
+      .pricing-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: auto;
+      gap: 2rem;
+      
+      }
+
+      .pricing-plan{
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #FFDFD6;
+      border-radius: 30px;
+      
+    }
+     
+      
+      
+      .plan-title{
+        font-size: xxx-large;
+
+      }
+      .plan-price{
+      font-size: larger;
+      font-weight: bold;
+      text-align: center;
+      }
+      .plan-features{
+        list-style-type: none;
+        font-weight: bolder;
+        font-size: large;
+      }
+      .plan-button{
+        display: block;
+        margin: 20px auto 0 auto; 
+        padding: 10px 80px;
+        background-color: #694F8E;
+        color: rgb(255, 255, 255);
+        border: s;
+        border-radius: 20px;
+        
+        font-size: large;
+               
+      }
+      .big{
+        font-size: xx-large;
+      }
+      .white{
+        color: #174b80;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+        height: 100%;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price"><span class="big"> LKR 2699</span><span class="white">/month</span></div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price"><span class="big">LKR 5699</span><span class="white">/month</span></div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price"><span class="big">LKR 14599</span><span class="white">/month</span></div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+      </div>
+    </div>
+  </body>
+</html>
